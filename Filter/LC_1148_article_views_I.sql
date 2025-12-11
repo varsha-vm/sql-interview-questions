@@ -1,6 +1,6 @@
 -- Write your MySQL query statement below
--- Time : O(N)
--- Space : O(1)
+-- Time : O(N log N)
+-- Space : O(N)
 
 SELECT
         distinct author_id as id
