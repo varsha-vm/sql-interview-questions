@@ -8,9 +8,9 @@ WITH CTE AS(
 )
 SELECT
         CASE
-            WHEN id < max_id AND id%2!=0 THEN id+1 #odd regular and special end-case
+            WHEN id < max_id AND id%2!=0 THEN id+1 --odd regular
             WHEN id%2=0 THEN id-1 #even
-            ELSE id
+            ELSE id  --special odd end-case
         END AS id,
         student
 FROM CTE
