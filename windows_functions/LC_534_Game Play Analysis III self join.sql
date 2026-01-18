@@ -1,5 +1,3 @@
--- Time: O(n log n)
--- Space: O(n)
 SELECT
         a.player_id,
         a.event_date,
