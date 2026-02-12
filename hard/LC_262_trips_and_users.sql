@@ -10,6 +10,7 @@ FROM trips t
 JOIN users u ON t.client_id = u.users_id AND u.banned = 'No'
 JOIN users u1 ON t.driver_id = u1.users_id AND u1.banned = 'No'
 WHERE t.request_at BETWEEN "2013-10-01" and "2013-10-03"
+
 )
 
 SELECT
